@@ -1,18 +1,107 @@
-/* Error: The target selector was not found.
- * Use "@extend %base-title !optional" to avoid this error.
- *    ,
- * 12 |     @extend %base-title;
- *    |     ^^^^^^^^^^^^^^^^^^^
- *    '
- *   scss/main.scss 12:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %base-title !optional" to avoid this error.\a    \2577 \a 12 \2502      @extend %base-title;\a    \2502      ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/main.scss 12:5  root stylesheet';
+/** colores */
+/** fuentes */
+/** placeholders */
+.card {
+  border: 1px solid #ebebeb;
 }
+.card img.card-img-top {
+  width: 100%;
+}
+.card .card-body {
+  padding: 20px;
+}
+.card .card-body .card-title {
+  color: #025157;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0.9;
+}
+.card .card-body .metadata .category {
+  color: #67b54b;
+  font-weight: 400;
+}
+.card .card-body .metadata .read-time {
+  color: #979797;
+  font-weight: 200;
+}
+.card .card-body .card-text {
+  font-size: 20px;
+}
+.card .card-body .card-text .read-more {
+  text-decoration: underline;
+}
+.card .card-body .card-text .read-more:hover {
+  cursor: pointer;
+  color: #67b54b;
+}
+.card .card-body .author {
+  display: flex;
+  align-items: center;
+}
+.card .card-body .author .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.card .card-body .author .img img {
+  width: 100%;
+}
+
+.blog {
+  background-color: #fff;
+  width: unset;
+  padding: 5% 10%;
+}
+.blog .description .title {
+  font-family: "Alegreya", serif;
+  font-weight: bolder;
+  color: #770808;
+  font-size: 35px;
+  margin: 0 0 25px;
+}
+.blog .description .process-list .process {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.blog .description .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+.blog .description .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog .description .process-list .process > .process-description > h3 {
+  color: #025157;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.blog .description .process-list .process > .process-description > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .description button {
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  color: #fff;
+  background-color: #025157;
+  border: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 33.33%;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

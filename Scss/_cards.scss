@@ -1,0 +1,60 @@
+.card {
+	border: 1px solid #ebebeb;
+
+	img.card-img-top {
+		width: 100%;
+	}
+
+	.card-body {
+		padding: 20px;
+		.card-title {
+			color: $dark-green-title;
+			margin: 0;
+			font-size: 30px;
+			font-weight: 600;
+			line-height: .9;
+		}
+
+		.metadata {
+			.category {
+				color: $light-green;
+				font-weight: 400;
+			}
+
+			.read-time {
+				color: $light-gray;
+				font-weight: 200;
+			}
+		}
+
+		.card-text {
+			font-size: 20px;
+
+			.read-more {
+				text-decoration: underline;
+
+				&:hover {
+					cursor: pointer;
+					color: $light-green;
+				}
+			}
+		}
+
+		.author {
+			display: flex;
+			align-items: center;
+
+			.img {
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				overflow: hidden;
+				margin-right: 10px;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
